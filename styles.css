@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+}
+
+ul li {
+  margin-right: 50px;
+  font-size: 24px;
+  margin-bottom: 4px;
+}
+nav ul {
+  list-style-type: none;
+}
+
+.button button {
+  border: 2px solid rgb(245, 23, 103);
+  background-color: white;
+  color: black;
+  margin-right: 10px;
+  font-weight: 700;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.button button:last-child {
+  background-color: rgb(245, 23, 103);
+  color: white;
+  margin-right: 10px;
+  font-weight: 600;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 999px;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+h1 {
+  overflow: hidden;
+  border-right: 5px solid red;
+  white-space: nowrap;
+  letter-spacing: 5px;
+  animation: typing 5s infinite;
+  margin: auto;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 500px;
+  }
+}
+
+.intro p {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://wallpapercave.com/wp/T8omI9I.jpg");
+  background-size: cover;
+  height: 1400px;
+}
+
+.card {
+  border: 2px solid white;
+  padding: 25px;
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(19 15 235 / 10%) 1px 2px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  margin-left: 30px;
+  height: 600px;
+}
+
+.company img {
+  width: 150px;
+}
+
+:root {
+  --avatar-width: 150px;
+}
+
+.avatar {
+  position: absolute;
+  border-radius: 100%;
+  width: var(--avatar-width);
+  top: calc(var(--avatar-width) / 2 * -1);
+}
+
+.card h2 {
+  margin-top: 70px;
+}
+
+.container p {
+  width: 300px;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  font-size: 20px;
+  color: rgb(55, 63, 73);
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-weight: 300;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact img {
+  width: 40px;
+  padding: 6px;
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  nav img {
+    width: 120px;
+  }
+  ul {
+    justify-content: flex-start;
+  }
+  ul li {
+    margin-bottom: 10px;
+  }
+}
